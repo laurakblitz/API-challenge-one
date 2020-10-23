@@ -1,6 +1,6 @@
 // ********** VARIABLES ********** //
 const baseURL = 'https://api.covid19api.com/';
-const key = '5cf9dfd5-3449-485e-b5ae-70a60e997864'
+/*const key = '5cf9dfd5-3449-485e-b5ae-70a60e997864'*/
 const section = document.querySelector('section')
 
 
