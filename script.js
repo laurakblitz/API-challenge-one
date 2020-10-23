@@ -1,6 +1,8 @@
 // ********** VARIABLES ********** //
 const baseURL = 'https://api.covid19api.com/';
+const key = '5cf9dfd5-3449-485e-b5ae-70a60e997864'
 const section = document.querySelector('section')
+
 
 // ********** FETCH ********** //
 fetch(`${baseURL}summary`)
@@ -25,10 +27,10 @@ function displayResults(json) {
 
   //* VARIABLES *//
     let infoContainer = document.createElement('div');
-    let country = document.createElement('button');
+    let country = document.createElement('h3');
     let totalCases = document.createElement('p');
     let newCases = document.createElement('p');
-
+    
 
     let current = summary.Countries[i];
     console.log('Current:', current);
@@ -36,18 +38,17 @@ function displayResults(json) {
 
   // ********** SETTING TEXT CONTENT AND ATTRIBUTES ********** //
     country.textContent = `${current.Country}`;
-    totalCases.textContent = `${current.TotalConfirmed}`;
-    newCases.textContent = `${current.NewConfirmed}`;
-
-
-    //section.appendChild(country);
-    //section.appendChild(totalCases);
+    totalCases.textContent = "Total Cases: " + `${current.TotalConfirmed}`;
+    newCases.textContent = "New Cases: " + `${current.NewConfirmed}`;
+    infoContainer.setAttribute('class', 'column');
+    section.setAttribute('class', 'section');
+  
+    
+  //* ADD TO SECTION TAG *//
     section.appendChild(infoContainer);
     infoContainer.appendChild(country);
     infoContainer.appendChild(totalCases);
     infoContainer.appendChild(newCases);
-    //country.addEventListener('click', function ());
-
   }
 }
 
