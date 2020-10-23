@@ -51,10 +51,3 @@ function displayResults(json) {
     infoContainer.appendChild(newCases);
   }
 }
-
-
-
-
-
-
-

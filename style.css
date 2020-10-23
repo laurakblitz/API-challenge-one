@@ -1,13 +1,17 @@
 body {
-    background-color: #33E9FF;
+    background-color: #BDC3CB;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     background-size: contain;
 }
 
 .jumbotron {
-    background-color: teal;
-    padding: 100px;
+    background-color: #DCD2CC;
+    padding: 10px;
+    width: auto;
+    border-style: solid;
+    border-color: #EDE7DC;
+    border-radius: 10px;
 }
 
 .section {
@@ -17,9 +21,9 @@ body {
 }
 
 .column {
-    background-color: green;
+    background-color: #DCD2CC;
     border-style: solid;
-    border-color: whitesmoke;
+    border-color: #EDE7DC;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
